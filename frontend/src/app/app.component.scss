@@ -1,0 +1,28 @@
+.tab {
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    background-color:#969CBA;
+    color: #f1f1f1;
+}
+  
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #f1f1f1;
+  }
+
+  .cursor-pointer{
+    cursor: pointer;
+}
+
+.tab-active-background {
+  background-color:#4169E1;
+  transform: scaleY(0.92);
+}

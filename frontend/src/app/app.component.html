@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="tab col-md-2 cursor-pointer" routerLink="/personal-information" (click)="setFlag('personalInformation')"
+      [ngClass]="tabNames.personalInformation?'tab-active-background':''">PERSONAL INFORMATION</div>
+    <div class="tab col-md-2 cursor-pointer" routerLink="/service-details" (click)="setFlag('serviceDetails')"
+      [ngClass]="tabNames.serviceDetails?'tab-active-background':''">SERVICE
+      DETAILS</div>
+    <div class="tab col-md-2 cursor-pointer" routerLink="/transition-details" (click)="setFlag('transitionDetails')"
+      [ngClass]="tabNames.transitionDetails?'tab-active-background':''">
+      TRANSITION DETAILS</div>
+    <div class="tab col-md-2 cursor-pointer" routerLink="/sponsor-details" (click)="setFlag('sponsorDetails')"
+      [ngClass]="tabNames.sponsorDetails?'tab-active-background':''">SPONSOR
+      DETAILS</div>
+    <div class="tab col-md-2 cursor-pointer" routerLink="/permissions" (click)="setFlag('permissions')"
+      [ngClass]="tabNames.permissions?'tab-active-background':''">PERMISSIONS
+    </div>
+    <div class="tab col-md-2 cursor-pointer" routerLink="/terms-and-conditions" (click)="setFlag('termsAndConditions')"
+      [ngClass]="tabNames.termsAndConditions?'tab-active-background':''">
+      TERMS AND CONDITIONS</div>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
